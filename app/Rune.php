@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rune extends Model
 {
-    //
+    protected $fillable = ['name', 'picture', 'bonus'];
 }

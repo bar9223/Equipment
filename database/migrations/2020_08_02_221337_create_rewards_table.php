@@ -22,7 +22,7 @@ class CreateRewardsTable extends Migration
             $table->string('name');
             $table->string('picture');
             $table->string('code');
-            $table->string('price');
+            $table->float('price');
             $table->enum('status', [
                 "0" => "waiting",
                 "1" => "sent",

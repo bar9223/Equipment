@@ -10,13 +10,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a57453b9-7f92-4933-b95e-71d9fbeedf70" name="Default Changelist" comment="creating the sandbox">
+    <list default="true" id="a57453b9-7f92-4933-b95e-71d9fbeedf70" name="Default Changelist" comment="setting up db connection, preparing migrations and models">
+      <change afterPath="$PROJECT_DIR$/resources/views/boxes/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/rewards/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/runes/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Box.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Box.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reward.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reward.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Rune.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Rune.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_02_221337_create_rewards_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_02_221337_create_rewards_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +52,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/quickstart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/runes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,6 +62,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/runes" />
+      <recent name="$PROJECT_DIR$/resources/views/rewards" />
       <recent name="$PROJECT_DIR$/quickstart" />
     </key>
   </component>
@@ -66,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596381861798</updated>
-      <workItem from="1596381863005" duration="15042000" />
+      <workItem from="1596381863005" duration="21113000" />
     </task>
     <task id="LOCAL-00001" summary="creating the sandbox">
       <created>1596390001769</created>
@@ -82,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596394554723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="setting up db connection, preparing migrations and models">
+      <created>1596407904185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596407904185</updated>
+    </task>
+    <task id="LOCAL-00004" summary="setting up db connection, preparing migrations and models">
+      <created>1596407934096</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596407934096</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,21 +124,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating the sandbox" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating the sandbox" />
+    <MESSAGE value="setting up db connection, preparing migrations and models" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting up db connection, preparing migrations and models" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1090" y="186" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596407674481">
+    <state x="1090" y="186" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596409076404">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="1090" y="186" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596407674481" />
+    <state x="1090" y="186" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596409076404" />
+    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596412860250">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596412860250" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1596407614623">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="263" height="500" key="HiddenNamespacesPopup/72.27.1848.1053@72.27.1848.1053" timestamp="1596407614623" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596394610383">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596407938648">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1596394610383" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1596407938648" />
     <state x="610" y="203" width="762" height="707" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1596384481447">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -124,14 +152,14 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="154" y="129" width="1648" height="853" key="dock-window-1/72.27.1848.1053@72.27.1848.1053" timestamp="1596406026816" />
-    <state x="687" y="292" width="618" height="522" key="find.popup" timestamp="1596396972872">
+    <state x="687" y="292" width="618" height="522" key="find.popup" timestamp="1596408550889">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596396972872" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596405857167">
+    <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596408550889" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596408191620">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596405857167" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596408191620" />
     <state x="721" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596389665427">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
