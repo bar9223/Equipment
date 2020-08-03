@@ -5,14 +5,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a57453b9-7f92-4933-b95e-71d9fbeedf70" name="Default Changelist" comment="setting up db connection, preparing migrations and models">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/equipment/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Equipment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Equipment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/10962363-50df-4f79-beb9-16890fce01d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/10962363-50df-4f79-beb9-16890fce01d6.xml" afterDir="false" />
+    <list default="true" id="a57453b9-7f92-4933-b95e-71d9fbeedf70" name="Default Changelist" comment="get for Equipment by user created">
+      <change afterPath="$PROJECT_DIR$/resources/views/buy/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BuyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserBox.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserBox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserReward.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserReward.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserRune.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserRune.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596381861798</updated>
       <workItem from="1596381863005" duration="21113000" />
-      <workItem from="1596437891130" duration="18626000" />
+      <workItem from="1596437891130" duration="26792000" />
     </task>
     <task id="LOCAL-00001" summary="creating the sandbox">
       <created>1596390001769</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596407934096</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="get for Equipment by user created">
+      <created>1596481837779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596481837779</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,17 +264,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating the sandbox" />
     <MESSAGE value="setting up db connection, preparing migrations and models" />
-    <option name="LAST_COMMIT_MESSAGE" value="setting up db connection, preparing migrations and models" />
+    <MESSAGE value="get for Equipment by user created" />
+    <option name="LAST_COMMIT_MESSAGE" value="get for Equipment by user created" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1090" y="186" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596409076404">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="1090" y="186" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596409076404" />
-    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596412860250">
+    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596482934185">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596412860250" />
+    <state x="729" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1596482934185" />
     <state x="172" y="127" width="1648" height="853" key="DiffContextDialog" timestamp="1596467323496">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -281,10 +288,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="720" y="468" width="542" height="178" key="VCS.ChangelistChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1596467280921" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596407938648">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596481841743">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1596407938648" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1596481841743" />
     <state x="865" y="443" width="367" height="325" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596468770990">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -305,10 +312,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="660" y="252" key="run.anything.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596475889130" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596408191620">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596483561802">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596408191620" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596483561802" />
     <state x="721" y="467" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596389665427">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

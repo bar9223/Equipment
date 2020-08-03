@@ -18,10 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/equipment/{id}', 'EquipmentController@getEquipment');
-Route::get('/buy-box/{id}', 'BuyController@buyBox');
-Route::get('/buy-reward/{id}', 'BuyController@buyReward');
-Route::get('/buy-rune/{id}', 'BuyController@buyRune');
 
+Route::resource('buy', 'BuyController');
 Route::resource('boxes', 'BoxesController');
 Route::resource('runes', 'RunesController');
 Route::resource('rewards', 'RewardsController');
